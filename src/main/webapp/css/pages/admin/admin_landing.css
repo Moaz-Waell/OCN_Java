@@ -1,0 +1,199 @@
+@import url(../../base/variables.css);
+@import url(../../base/base.css);
+@import url(../../base/typography.css);
+@import url(../../components/buttons.css);
+@import url(../../base/general.css);
+@import url(../../base/utilities.css);
+@import url(../../components/sideNav.css);
+@import url(../../components/meal.css);
+@import url(../../mediaqueries/general.css);
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  position: relative;
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+/* SECTION STYLES */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+}
+
+/* analysis SECTION */
+.analysis-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+.color-white {
+  background: var(--color-text-secondary);
+}
+
+.analysis-item {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  flex: 1 1 auto;
+  max-width: 200px;
+  border: 2px solid var(--color-border-primary);
+}
+
+.analysis-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-item img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.analysis-item p {
+  font-size: 1.4rem;
+}
+
+.analysis-section {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.analysis-section .heading-secondary.text-center {
+  font-size: 2.5rem;
+}
+
+.top {
+  display: flex;
+  margin-left: 14rem;
+  gap: 23rem;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding: 2rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+/* Table Styles */
+.orders-table {
+  width: 100%;
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 4rem auto;
+  border-collapse: collapse;
+  background-color: var(--color-bg-primary);
+  border-radius: 1.6rem;
+  overflow: hidden;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 1.6rem;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  border-bottom: 1px solid var(--color-border-primary);
+}
+
+.orders-table th {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  flex-shrink: 0;
+  margin-bottom: 1.6rem;
+  color: var(--color-error-dark);
+  background-color: var(--color-bg-primary);
+}
+
+.orders-table td {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  flex-shrink: 0;
+  margin-bottom: 1.6rem;
+  color: var(--color-primary);
+}
+
+.view-details {
+  color: var(--color-btn-primary);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.view-details:hover {
+  color: var(--color-btn-hover);
+
+}
+
+/* Add to admin_landing.css */
+.inline-form {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.error-message {
+  color: #dc3545;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+}
+
+.success-message {
+  color: #28a745;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #28a745;
+  border-radius: 4px;
+}

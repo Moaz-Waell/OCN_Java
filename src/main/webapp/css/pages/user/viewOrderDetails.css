@@ -1,0 +1,239 @@
+@import url(../../base/variables.css);
+@import url(../../base/base.css);
+@import url(../../base/typography.css);
+@import url(../../components/buttons.css);
+@import url(../../base/general.css);
+@import url(../../base/utilities.css);
+@import url(../../components/sideNav.css);
+@import url(../../components/meal.css);
+@import url(../../mediaqueries/general.css);
+
+
+
+/* Global overrides */
+body {
+  background-color: var(--color-bg-primary);
+  font-family: "Rubik", sans-serif;
+  line-height: 1.5;
+  padding-top: 80px;
+  /* Space for sticky button */
+}
+
+/* Sticky Back Button */
+.back-button {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 1000;
+  background: linear-gradient(135deg, var(--color-btn-primary), var(--color-bg-primary));
+  color: white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Arrow-only Back Button Text */
+.back-arrow {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Order Header */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+/* Modern Category Title */
+.category-title {
+  font-size: 3rem;
+  color: var(--color-primary-dark);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+/* Status Badge */
+.order-status {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-completed {
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-primary);
+}
+
+.status-pending {
+  background-color: var(--color-grey-dark-2);
+  color: white;
+}
+
+/* Order Summary */
+.order-summary {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  background-color: var(--color-bg-primary);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.summary-item {
+  margin-bottom: 1rem;
+}
+
+.summary-item .label {
+  font-weight: bold;
+  color: var(--color-primary-dark);
+  font-size: 1.6rem;
+}
+
+.summary-item .value {
+  color: var(--color-grey-dark-2);
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+/* Order Items */
+.order-items {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.order-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background-color: var(--color-bg-primary);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-details h3 {
+  font-size: 1.8rem;
+  color: var(--color-primary-dark);
+  margin: 0 0 0.5rem;
+}
+
+.item-details p {
+  font-size: 1.4rem;
+  color: var(--color-grey-dark-2);
+  margin: 0;
+}
+
+.item-price {
+  margin-left: auto;
+  text-align: right;
+  font-size: 1.4rem;
+}
+
+.item-price .quantity {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.item-price .unit-price {
+  display: block;
+  color: var(--color-grey-dark-2);
+  margin-bottom: 0.5rem;
+}
+
+/* Order Total */
+.order-total {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  background-color: var(--color-bg-primary);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.total-row .label {
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+.total-row .value {
+  color: var(--color-grey-dark-2);
+}
+
+.final-total .value {
+  font-size: 2rem;
+  color: var(--color-btn-primary);
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-price {
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+  .category-title {
+    font-size: 2.5rem;
+  }
+}
+

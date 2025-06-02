@@ -1,0 +1,30 @@
+:root {
+  --color-primary: #143f23;
+  --color-primary-light:#1c5f32;
+  --color-primary-dark: #1d783b;
+
+  /* buttons color */
+  --color-btn-primary: #dd6213;
+  --color-btn-hover: #f8c079;
+
+  /* text colors */
+  --color-text-primary: #ffff;
+  --color-text-secondary:#2d1107;
+
+  /* background colors */
+  --color-bg-primary:#fef8ee;
+
+
+  /* borders colors */
+  --color-border-primary: #dd6213;
+
+
+  /* grey shades */
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --color-error: #ffebee;
+  --color-error-dark: #dd6213;
+
+}

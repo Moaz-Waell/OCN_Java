@@ -1,0 +1,187 @@
+/* Import base styles */
+@import url(../../base/variables.css);
+@import url(../../base/base.css);
+@import url(../../base/typography.css);
+@import url(../../components/buttons.css);
+@import url(../../base/general.css);
+@import url(../../base/utilities.css);
+@import url(../../components/sideNav.css);
+@import url(../../components/meal.css);
+@import url(../../components/checkbox.css);
+@import url(../../mediaqueries/general.css);
+
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+/* Profile Container */
+.main-content {
+  position: relative;
+  flex: 1;
+  overflow-y: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: var(--color-bg-primary);
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Profile Avatar */
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+
+/* User Details */
+.user-details h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: var(--color-primary);
+}
+
+.user-details p {
+  margin: 0.4rem 0;
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+
+/* Input Group */
+.input-group {
+  margin-top: 1rem;
+}
+
+.input-label {
+  font-weight: bold;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--color-border-primary);
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: var(--color-primary-dark);
+  background-color: white;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--color-btn-hover);
+  box-shadow: 0 0 0 3px rgba(72, 179, 204, 0.3);
+}
+
+/* Allergies Section */
+.allergies-section {
+  margin-top: 2rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+/* Allergy Checkbox Group */
+.allergy-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Save Button */
+.save-button {
+  margin-top: 1rem;
+}
+
+/* Success Message */
+.success-message {
+  background: var(--color-btn-hover);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 600px;
+  animation: fadeInOut 0.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .allergy-group {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .checkbox-container {
+    font-size: 1.4rem;
+  }
+
+  .input-field {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .allergy-group {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox-container {
+    font-size: 1.3rem;
+  }
+}

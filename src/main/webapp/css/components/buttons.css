@@ -1,0 +1,154 @@
+/********************/
+/* RESET  buttons  */
+/********************/
+
+.btn,
+.btn:link,
+.btn:visited {
+  /* this is inline element, make it inline-block so that the box model applies as usual */
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all ease 0.2s;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+}
+
+/********************/
+/* primary buttons  */
+/********************/
+/* LoVe HAte */
+
+.btn--full,
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--color-btn-primary);
+  color: var(--color-text-secondary);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-primary);
+}
+
+
+
+/*********************/
+/* BACK BUTTONS  */
+/*********************/
+.btn-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  font-size: 1.4rem;
+  background-color: var(--color-btn-primary);
+  color: var(--color-text-secondary);
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-back svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--color-text-secondary);
+}
+
+.btn-back:hover,
+.btn-back:active {
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-primary);
+}
+
+/*********************/
+/* CRUD BUTTONS  */
+/*********************/
+
+.CRUD-btn {
+  padding: 5px 10px;
+  font-family: 'rubik', sans-serif;
+  margin-right: 5px;
+  font-family: 'rubik', sans-serif;
+  border-radius: 1.1rem;
+  background-color: var(--color-btn-primary);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border-primary);
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.CRUD-btn:hover {
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.btn--status {
+  cursor: default;
+  pointer-events: none;
+}
+
+.ordersstatus.pending {
+  background: #143f23;
+  color: #fff;
+}
+
+.ordersstatus.in-progress {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.ordersstatus.delivered {
+  background: #399129;
+  color: #fff;
+}
+
+.ordersstatus.cancelled {
+  background: #f44336;
+  color: #fff;
+}
+
+.btn--status,
+.btn--order-again {
+  padding: 0.8rem 1.2rem;
+  border-radius: 9px;
+  font-size: 1.2rem;
+  min-width: 10rem;
+}
+
+.ordersstatus {
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-secondary);
+}
+
+.btn--order-again {
+  background-color: var(--color-btn-primary);
+  color: var(--color-text-secondary);
+}
+
+.btn--order-again:hover {
+  background-color: var(--color-btn-hover);
+}
+
+/* Feedback Stars */
+.rating-stars .star {
+  color: #ddd;
+  font-size: 1.2em;
+}
+
+.rating-stars .filled {
+  color: #ffd700;
+}

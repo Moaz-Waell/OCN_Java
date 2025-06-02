@@ -1,0 +1,211 @@
+@import url(../../../css/mediaqueries/general.css);
+
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.portal-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left section */
+.background-section {
+    flex: 1;
+    position: relative;
+    background-image: url('../../../img/aast_imgs/aastLoginImage.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    padding: 2rem;
+}
+
+.overlay h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Right section*/
+.uni-login-section {
+    width: 450px;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.college-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-container h2 {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #333;
+}
+
+.browser-notice {
+    background-color: #ffeeba;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    direction: rtl;
+    text-align: right;
+}
+
+.close-notice {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.form-section h3 {
+    margin: 1.5rem 0 1rem 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.register-btn {
+    background-color: #ff5b57;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #c82333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember-me label {
+    margin-left: 8px;
+    color: #666;
+}
+
+.login-btn {
+    background-color: #0096c7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #0077b6;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.forgot-password a {
+    color: #0096c7;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    background-color: #ffe6e6;
+    border: 1px solid #ff4444;
+    color: #cc0000;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

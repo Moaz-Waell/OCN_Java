@@ -1,0 +1,336 @@
+@import url(../../base/variables.css);
+@import url(../../base/base.css);
+@import url(../../base/typography.css);
+@import url(../../components/buttons.css);
+@import url(../../base/general.css);
+@import url(../../base/utilities.css);
+@import url(../../mediaqueries/general.css);
+@import url(../../components/sideNav.css);
+@import url(../../pages/user/home.css);
+
+
+
+
+@media (max-width: 600px) {
+  .cart-footer {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    width: 95%;
+  }
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  color: var(--color-primary);
+  font-weight: 400;
+  overflow-x: hidden;
+  padding-bottom: 14rem;
+}
+
+
+.empty-cart-message {
+  text-align: center;
+  padding: 4rem;
+  background: #f8f9fa;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.empty-cart-message i {
+  font-size: 4rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.empty-cart-message h2 {
+  color: #343a40;
+  margin-bottom: 0.5rem;
+}
+
+.empty-cart-message p {
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.btn--checkout:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #6c757d;
+}
+
+
+.heading-secondary {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+
+.navbar {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding: 2rem;
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  font-size: 1.4rem;
+  background-color: var(--color-btn-primary);
+  color: var(--color-text-secondary);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-back svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--color-text-secondary);
+}
+
+.btn-back:hover,
+.btn-back:active {
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-primary);
+}
+
+/* Meal Cart Container */
+.meal-cart-container {
+  width: 90%;
+  max-width: 84rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--color-bg-primary);
+  border-radius: 1.6rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-bottom: 12rem;
+}
+
+
+.meal-cart {
+  margin-bottom: 2rem;
+}
+
+.meal-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg-primary);
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.2rem;
+  transition: all ease 0.2s;
+  padding: 2rem 2.5rem;
+  margin: 1.5rem auto;
+  gap: 2rem;
+  /* cursor: pointer; */
+  width: 100%;
+  /* height: 8rem; */
+  justify-content: space-between;
+  position: relative;
+}
+
+.meal-item:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.2rem);
+}
+
+.meal-item__info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-item__photo {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.meal-item__photo img {
+  align-content: center;
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the area */
+}
+
+.meal-item__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.meal-item__name {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.meal-item__description {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  max-height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #777;
+}
+
+.meal-item__price {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #777;
+  margin-top: 0.4rem;
+}
+
+.meal-item__remove-btn {
+  position: absolute;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  background-color: var(--color-btn-primary);
+  color: var(--color-text-secondary);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.2s;
+}
+
+.meal-item__remove-btn:hover,
+.meal-item__remove-btn:active {
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-primary);
+}
+
+.cart-footer {
+  position: fixed;
+  bottom: 0;
+  left: 58%;
+  /* Center horizontally */
+  right: 42%;
+  /* Center horizontally */
+  transform: translateX(-61%);
+  /* Adjust for element's own width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--color-bg-primary);
+  border-radius: 1.2rem 1.2rem 0 0;
+  width: 90%;
+  max-width: 50rem;
+  /* Match the max-width of .meal-cart-container */
+  z-index: 1000;
+  box-shadow: 12px -1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.total-amount {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+.btn--checkout {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all ease 0.2s;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.2rem 2.8rem;
+  width: 100%;
+  max-width: 40rem;
+  border-radius: 9px;
+  background-color: var(--color-btn-primary);
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+.btn--checkout:hover,
+.btn--checkout:active {
+  background-color: var(--color-btn-hover);
+  color: var(--color-text-primary);
+}
+
+/* Quantity control buttons styling */
+.meal-item__quantity-controls {
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.meal-item__quantity-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all ease 0.2s;
+}
+
+.meal-item__decrement-btn {
+  background-color: var(--color-btn-primary);
+  color: var(--color-text-secondary);
+}
+
+.meal-item__increment-btn {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.meal-item__quantity-btn:hover,
+.meal-item__quantity-btn:active {
+  color: var(--color-text-primary);
+}
+
+.meal-item__decrement-btn:hover,
+.meal-item__decrement-btn:active {
+  background-color: var(--color-btn-hover);
+}
+
+
+.meal-item__increment-btn:hover,
+.meal-item__increment-btn:active {
+    background-color: var(--color-primary-dark);
+  }
+
+
