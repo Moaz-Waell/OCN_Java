@@ -73,7 +73,7 @@
                         <% } %>
                     </div>
 
-                    <div class="heading-secondary meal_price">${String.format("%.2f", meal.mealPrice)}</div>
+                    <div class="heading-secondary meal_price">${String.format("%.2f", meal.mealPrice)} LE</div>
 
                     <div class="buttons">
                         <div class="quantity-selector">

@@ -45,7 +45,7 @@
                     <div class="menu-details">
                         <h3><%= meal.getMealName() %></h3>
                         <p><%= meal.getMealDescription() %></p>
-                        <span class="price">$<%= String.format("%.2f", meal.getMealPrice()) %></span>
+                        <span class="price"><%= String.format("%.2f", meal.getMealPrice()) %> LE</span>
                         <a href="MealServlet?id=<%= meal.getMealId() %>" class="view-details">View Details</a>
                     </div>
                 </div>

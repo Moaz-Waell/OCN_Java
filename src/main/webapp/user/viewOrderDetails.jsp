@@ -66,7 +66,7 @@
         </div>
         <div class="item-price">
             <span class="quantity">x<%= item.getQuantity() %></span>
-            <span class="unit-price">$<%= String.format("%.2f", meal.getMealPrice()) %></span>
+            <span class="unit-price"><%= String.format("%.2f", meal.getMealPrice()) %> LE</span>
         </div>
     </div>
     <% } %>

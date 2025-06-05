@@ -94,7 +94,7 @@
                 Quantity: <%= item.getQuantity() %>
               </div>
               <div class="meal-item__price">
-                $<%= String.format("%.2f", meal.getMealPrice()) %>
+                <%= String.format("%.2f", meal.getMealPrice()) %> LE
               </div>
             </div>
             <div class="meal-item__quantity-controls">

@@ -99,9 +99,9 @@
 
                     <!-- Order Summary -->
                     <div class="total_price">
-                        <h3 class="description">Subtotal: $<%= String.format("%.2f", subtotal) %></h3>
-                        <h3 class="description">Discount: $<%= String.format("%.2f", discount) %></h3>
-                        <h3 class="heading-secondary">Total Price: $<%= String.format("%.2f", totalPrice) %></h3>
+                        <h3 class="description">Subtotal: <%= String.format("%.2f", subtotal) %> LE</h3>
+                        <h3 class="description">Discount: <%= String.format("%.2f", discount) %> LE</h3>
+                        <h3 class="heading-secondary">Total Price: <%= String.format("%.2f", totalPrice) %> LE</h3>
                     </div>
                 </div>
 
