@@ -93,16 +93,15 @@ The demo video showcases:
 - **Revenue analytics** and reporting
 - **User management** and statistics
 - **Kitchen dashboard** for order preparation
-- **Weekly voucher system** based on student attendance
+- **Voucher system** for promotions
 
 ### 🔔 Smart Features
 
 - **Allergy management system** with ingredient tracking
 - **Best-seller recommendations** based on order history
-- **Email notifications** for order confirmations
+- **Email notifications** for order Confirmations
 - **Real-time order status** updates
 - **Ingredient exclusion** options for customization
-- **Attendance-based vouchers** - Students receive weekly discount vouchers based on their class attendance
 
 ### 📱 Technical Features
 
