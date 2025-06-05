@@ -107,8 +107,6 @@ The demo video showcases:
 
 ### 📱 Technical Features
 
-- **Responsive web design** for all devices
-- **RESTful architecture** with clean URLs
 - **Database transaction management**
 - **Secure authentication** and authorization
 - **Input validation** and sanitization
@@ -142,7 +140,7 @@ The demo video showcases:
 
 **Frontend:**
 
-- JSP, HTML5/CSS3, JavaScript, Bootstrap
+- JSP, HTML5/CSS3, JavaScript
 
 **Development:**
 
