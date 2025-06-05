@@ -17,9 +17,7 @@
 - [Usage](#-usage)
 - [Technical Details](#-technical-details)
 - [Documentation](#-documentation)
-- [Contributing](#-contributing)
 - [License](#-license)
-- [Support](#-support)
 - [Acknowledgments](#-acknowledgments)
 
 ---
@@ -161,13 +159,9 @@ The demo video showcases:
 
 ---
 
----
-
 ## 📄 License
 
 This project is developed as part of academic coursework at AAST University (Spring 2025 Semester).
-
----
 
 ---
 
@@ -228,6 +222,6 @@ This project demonstrated proficiency in:
 
 _Empowering campus dining through technology_
 
-[🔝 Back to Top](#ocn---online-campus-nutrition-)
+[🔝 Back to Top](#ocn---on-cloud-nine-)
 
 </div>
