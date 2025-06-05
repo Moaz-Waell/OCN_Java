@@ -1,4 +1,4 @@
-# OCN - Online Campus Nutrition 🍽️
+# OCN - On Cloud Nine 🍽️
 
 **A comprehensive campus food ordering and management system built for AAST university**
 
@@ -26,7 +26,7 @@
 
 ## 🌟 Overview
 
-**OCN (Online Campus Nutrition)** is a full-stack web application designed to revolutionize campus dining at AAST (Arab Academy for Science, Technology & Maritime Transport). This comprehensive food ordering and management system serves students, staff, and cafeteria administrators by providing a seamless digital dining experience.
+**OCN (On Cloud Nine)** is a full-stack web application designed to revolutionize campus dining at AAST (Arab Academy for Science, Technology & Maritime Transport). This comprehensive food ordering and management system serves students, staff, and cafeteria administrators by providing a seamless digital dining experience.
 
 ### 🎓 Academic Context
 
