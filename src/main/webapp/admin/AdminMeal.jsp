@@ -59,7 +59,7 @@
                              class="icon-img">
                     </td>
                     <td><%= meal.getMealName() %></td>
-                    <td>$<%= String.format("%.2f", meal.getMealPrice()) %></td>
+                    <td><%= String.format("%.2f", meal.getMealPrice()) %>LE</td>
                     <td><%= meal.getCategoryName() %></td>
                     <td>
                         <a href="AdminMealServlet?action=delete&meal_id=<%= meal.getMealId() %>"

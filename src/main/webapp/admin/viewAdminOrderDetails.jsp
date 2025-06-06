@@ -63,7 +63,7 @@
         </div>
         <div class="item-price">
             <span class="quantity">x<%= item.getQuantity() %></span>
-            <span class="unit-price">$<%= String.format("%.2f", meal.getMealPrice()) %></span>
+            <span class="unit-price"><%= String.format("%.2f", meal.getMealPrice()) %> LE</span>
         </div>
     </div>
     <% } %>
@@ -74,7 +74,7 @@
 <div class="order-total">
     <div class="total-row final-total">
         <span class="label">Total Amount:</span>
-        <span class="value">$<%= String.format("%.2f", order.getOrderAmount()) %></span>
+        <span class="value"><%= String.format("%.2f", order.getOrderAmount()) %> LE</span>
     </div>
 </div>
 </body>

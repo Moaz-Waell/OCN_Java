@@ -118,7 +118,7 @@
         <div class="cart-footer">
           <div class="total-amount">
             <i class="fas fa-receipt"></i>
-            Total Amount: $<span id="total-amount"><%= String.format("%.2f", total) %></span>
+            Total Amount: <span id="total-amount"><%= String.format("%.2f", total) %> LE</span>
           </div>
           <button type="submit" class="btn btn--full btn--checkout">
             <i class="fas fa-credit-card"></i> Proceed to Checkout

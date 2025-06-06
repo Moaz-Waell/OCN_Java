@@ -76,12 +76,12 @@
                     </div>
                     <div class="analysis-item">
                         <p class="margin-bottom-1rem"><b>Total Revenue:</b></p>
-                        <p>$<%= String.format("%.2f", totalRevenue) %>
+                        <p><%= String.format("%.2f", totalRevenue) %> LE
                         </p>
                     </div>
                     <div class="analysis-item">
                         <p class="margin-bottom-1rem"><b>Today Revenue:</b></p>
-                        <p>$<%= String.format("%.2f", todayRevenue) %>
+                        <p><%= String.format("%.2f", todayRevenue) %> LE
                         </p>
                     </div>
                     <div class="analysis-item">
@@ -130,7 +130,7 @@
                     </td>
                     <td><%= order.getOrderScheduleTime() %>
                     </td>
-                    <td>$<%= String.format("%.2f", order.getOrderAmount()) %>
+                    <td><%= String.format("%.2f", order.getOrderAmount()) %> LE
                     </td>
                     <td>
                         <a href="${pageContext.request.contextPath}/AdminOrderServlet?action=viewDetails&orderId=<%= order.getOrderId() %>"

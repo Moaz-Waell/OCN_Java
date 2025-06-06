@@ -77,7 +77,7 @@
 <div class="order-total">
     <div class="total-row final-total">
         <span class="label">Total Amount:</span>
-        <span class="value">$<%= String.format("%.2f", order.getOrderAmount()) %></span>
+        <span class="value"><%= String.format("%.2f", order.getOrderAmount()) %> LE</span>
     </div>
 </div>
 </body>
