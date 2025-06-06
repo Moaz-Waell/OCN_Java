@@ -57,7 +57,7 @@ For detailed system requirements, architecture diagrams, and technical specifica
 
 ### Live Demo Video
 
-**[🎥 Watch Full System Demo - "On Cloud Nine: Full-Stack Campus Meal Ordering System"](https://streamable.com/qgxdgr)**
+**[🎥 Watch Full System Demo - "On Cloud Nine: Full-Stack Campus Meal Ordering System"](https://youtu.be/8r0JhcUI4K4)**
 
 The demo video showcases:
 
