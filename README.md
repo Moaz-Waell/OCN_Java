@@ -177,8 +177,12 @@ This project is developed as part of academic coursework at AAST University (Spr
 
 **Project Contributors:**
 
-- **Moaz Wael** (moazwael.dev@gmail.com)
-- **Shahd Osama** (shahdosama197@gmail.com)
+- **Moaz Wael**
+- **Shahd Osama** 
+- **Radwa Sherif** 
+- **Nada Sherif** 
+- **Ziad Belal** 
+
 
 ### Technology Acknowledgments
 
